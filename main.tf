@@ -44,6 +44,7 @@ resource "google_compute_instance" "http_server" {
   resource_policies = [google_compute_resource_policy.daily_workhours.id]
 }
 
+# Adding shutdown and start policy for VMs to save cost
 resource "google_compute_resource_policy" "daily_workhours" {
   name   = "gce-policy"
   region = "us-west1"
