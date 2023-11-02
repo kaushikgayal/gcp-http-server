@@ -32,7 +32,7 @@ run "bad_input_should_fail"{
 
 
 run "http_server_name_check"{
-    command = plan
+    command = apply
     module {
         source = "./"
     }
