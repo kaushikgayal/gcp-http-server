@@ -14,6 +14,7 @@ variable "endpoint" {
     type = string
 }
 
+#Adding a wait of 30sec to give time for resource provisioning before testing the URL
 resource "null_resource" "previous" {}
 resource "time_sleep" "wait_30_seconds" {
   depends_on = [null_resource.previous]
