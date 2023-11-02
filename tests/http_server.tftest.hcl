@@ -44,7 +44,7 @@ run "http_server_name_check"{
 }
 
 run "is_website_running" {
-  command = plan
+  command = apply
 
   module {
     source = "./tests/helpers"
