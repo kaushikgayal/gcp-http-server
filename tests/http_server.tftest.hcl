@@ -32,7 +32,7 @@ run "bad_input_should_fail"{
 
 
 run "http_server_name_check"{
-    command = apply
+    command = plan
     module {
         source = "./"
     }
@@ -44,7 +44,7 @@ run "http_server_name_check"{
 }
 
 run "is_website_running" {
-  command = apply
+  command = plan
 
   module {
     source = "./tests/helpers"
