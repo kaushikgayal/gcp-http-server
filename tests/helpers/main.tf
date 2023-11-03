@@ -1,3 +1,4 @@
+#Terraform test helper module to support testing resources.
 terraform {
   required_providers {
     http = {
