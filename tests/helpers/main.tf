@@ -1,4 +1,5 @@
 #Terraform test helper module to support testing resources.
+# This comment needs to be deleted
 terraform {
   required_providers {
     http = {
